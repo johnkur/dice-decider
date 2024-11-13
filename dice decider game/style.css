@@ -1,0 +1,149 @@
+body{
+    background: linear-gradient(135deg, #f06, #ff9a9e);
+    color: white;
+}
+
+button.moveBtn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.1s, transform 0.1s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button.moveBtn:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+button.moveBtn:active {
+    transform: scale(1);
+}
+
+.huge{
+    font-size: 3.2rem;
+    display:flex;
+    justify-content: center;
+    background:linear-gradient(135deg, #f06, #ff9a9e);
+}
+
+a{
+    color:white;
+}
+
+
+
+
+
+
+/* Basic reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f06, #ff9a9e);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffdd57;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.spacing {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.one, .two {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ffdd57;
+}
+
+.blocky {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.blocky img {
+    width: 120px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ending {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+
+/* Animation when rolling dice */
+@keyframes rollDice {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.dice-roll {
+    animation: rollDice 1s ease-in-out;
+}
+
+/* Result pop effect */
+@keyframes resultPop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.resultPop {
+    animation: resultPop 0.5s ease-out;
+}
+
+
+
+
+
+
+
+
